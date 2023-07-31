@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="elibraryDB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.book_master_tbl" Member="book_master_tbls">
+    <Type Name="book_master_tbl">
+      <Column Name="book_id" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="book_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="genre" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="author_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="publisher_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="publish_date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="language" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="eddition" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="book_cost" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="no_of_pages" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="book_description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="actual_stock" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="current_stock" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="book_img_link" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.member_master_tbl" Member="member_master_tbls">
+    <Type Name="member_master_tbl">
+      <Column Name="full_name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dob" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="contact_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pincode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="full_address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="member_id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="account_status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
